@@ -1,0 +1,387 @@
+@font-face {
+    font-family: chch;
+    src: url(Futura-Bold.woff2);
+}
+
+@font-face {
+    font-family: chhh;
+    src: url(HelveticaNowText-Regular\ .woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Gilroy';
+}
+
+*::selection {
+    color: white;
+    background-color: black;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+#nav {
+    /* height: 100px; */
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 25px;
+}
+
+#nav-part1 {
+    /* background-color: red; */
+    height: 83px;
+    overflow: hidden;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav #nav-part2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#nav-part2 #links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+#nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+#links {
+    padding: 10px;
+}
+
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #f7f7f7;
+}
+
+#cursor {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 1vw;
+    padding-top: 20vh;
+}
+
+#page1 h1 {
+    font-size: 15.8vw;
+    font-family: chch;
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -8px;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    background-color: gold;
+    position: relative;
+}
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play {
+    padding: 2.5vw 2vw;
+    background-color: black;
+    color: white;
+    font-size: 1.2vw;
+    border-radius: 100%;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: chch;
+    opacity: 0;
+    scale: 0;
+}
+#hr{
+    z-index: 99;
+    margin: 10px;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+#hr span{
+    font-family: chhh;
+}
+#hr .s1{
+    padding-right: 40%;
+}
+#hr .s2{
+    padding-left: 51%;
+}
+.details{
+    display: none;
+}
+.elem .dets:hover  {
+    height: 30vh;
+}
+    
+.dets:hover .details {
+    display: inline;
+}
+
+.details img {
+    display: block;
+    max-width: 100px; /* Set a maximum width for the image */
+}
+.elem #dot {
+    height: 10px;
+    width: 10px;
+    color: black;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+}
+
+#span {
+    font-weight: 700;
+}
+
+/* .elem .dets:hover{
+    height: 25vh;
+    padding-top: 20px;
+    align-items: flex-start ;
+} */
+#page2 .elem {
+    font-family: chhh;
+    height: 100%;
+    width: 30.5%;
+    overflow: hidden;
+    scale: 1.1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: black; */
+}
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+.elem .dets {
+    height: 50px;
+    width: 60%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+}
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.child {
+    height: 55vh;
+    width: 40vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child img {
+    height: 100%;
+
+}
+
+@media (max-width:600px) {
+    #nav {
+        /* height: 100px; */
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        z-index: 99;
+        padding: 15px;
+    }
+
+    #nav-part1 {
+        /* background-color: red; */
+        height: 63px;
+        overflow: hidden;
+    }
+
+    #nav-part1 svg {
+        display: block;
+        height: 67px;
+        width: 80px;
+    }
+
+    #nav #two {
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    #nav #nav-part2 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #nav-part2 #icons i {
+        font-size: 18px;
+        margin: 0 20px;
+        font-weight: 100;
+    }
+
+    #links {
+        padding: 10px;
+        display: none;
+    }
+
+    #icons {
+        padding: 10px;
+        border-radius: 50px;
+        background-color: #f7f7f7;
+    }
+
+    #page1 {
+        min-height: 75vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 25vh;
+    }
+
+    #page1 h1 {
+        font-size: 15.5vw;
+        line-height: 14vw;
+        letter-spacing: -3px;
+    }
+
+    #video-container {
+        height: 25vh;
+        /* width: 100%; */
+        margin-top: 3vw;
+
+    }
+
+    #video-container #play {
+        padding: 9.5vw 7.2vw;
+        font-size: 4.5vw;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    #page2 {
+        min-height: 200vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5vw 3vw;
+        /* background-color: black; */
+
+    }
+
+    #page2 .elem {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        scale: 1.1;
+        margin-bottom: 7vw;
+        /* background-color: black; */
+    }
+
+    #page2 .elem img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #page3 {
+        min-height: 120vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+    }
+
+    .child {
+        height: 54vh;
+        width: 88vw;
+        position: relative;
+        display: flex;
+        padding: 15vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .child img {
+        height: 100%;
+
+    }
+
+}
